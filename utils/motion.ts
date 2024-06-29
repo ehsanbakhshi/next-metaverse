@@ -22,8 +22,8 @@ export const navVariants = {
 export const slideIn = (
   direction: string,
   type: string,
-  delay: string,
-  duration: string
+  delay: number,
+  duration: number
 ) => ({
   hidden: {
     x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
@@ -42,8 +42,8 @@ export const slideIn = (
 });
 
 export const staggerContainer = (
-  staggerChildren: string,
-  delayChildren: string
+  staggerChildren: number,
+  delayChildren: number
 ) => ({
   hidden: {},
   show: {
@@ -54,7 +54,7 @@ export const staggerContainer = (
   },
 });
 
-export const textVariant = (delay: string) => ({
+export const textVariant = (delay: number) => ({
   hidden: {
     y: 50,
     opacity: 0,

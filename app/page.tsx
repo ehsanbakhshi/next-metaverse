@@ -7,7 +7,7 @@ import {
   Insights,
   WhatsNew,
   World,
-} from "@/sections";
+} from "@/components/sections";
 
 export default function Home() {
   return (
