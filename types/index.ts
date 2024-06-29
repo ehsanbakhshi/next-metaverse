@@ -9,3 +9,9 @@ export type Feature = {
   title: string;
   subtitle: string;
 };
+
+export type Insight = {
+  imgUrl: string;
+  title: string;
+  subtitle: string;
+};
