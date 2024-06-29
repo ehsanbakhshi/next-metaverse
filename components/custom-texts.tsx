@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 interface TypingTextProps {
   title: string;
-  className: string;
+  className?: string;
 }
 
 export const TypingText: React.FC<TypingTextProps> = ({ title, className }) => (
@@ -24,7 +24,7 @@ export const TypingText: React.FC<TypingTextProps> = ({ title, className }) => (
 
 interface TitleTextProps {
   title: any;
-  className: string;
+  className?: string;
 }
 
 export const TitleText: React.FC<TitleTextProps> = ({ title, className }) => (
