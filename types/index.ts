@@ -3,3 +3,9 @@ export type Explore = {
   imgUrl: string;
   title: string;
 };
+
+export type Feature = {
+  imgUrl: string;
+  title: string;
+  subtitle: string;
+};
