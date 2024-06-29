@@ -1,4 +1,6 @@
-export const exploreWorlds = [
+import { Explore } from "@/types";
+
+export const exploreWorlds: Explore[] = [
   {
     id: "world-1",
     imgUrl: "/planet-01.png",

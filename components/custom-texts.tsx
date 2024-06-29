@@ -22,4 +22,18 @@ export const TypingText: React.FC<TypingTextProps> = ({ title, className }) => (
   </motion.p>
 );
 
-export const TitleText = () => <h2>Title Text</h2>;
+interface TitleTextProps {
+  title: any;
+  className: string;
+}
+
+export const TitleText: React.FC<TitleTextProps> = ({ title, className }) => (
+  <motion.h2
+    variants={textVariant2}
+    initial="hidden"
+    whileInView="show"
+    className={`mt-[8px] font-bold md:text-[64px] text-[40px] text-white ${className}`}
+  >
+    {title}
+  </motion.h2>
+);
