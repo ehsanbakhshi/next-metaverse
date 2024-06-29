@@ -26,10 +26,12 @@ export default function RootLayout({
           href="https://stijndv.com/fonts/Eudoxus-Sans.css"
         />
       </head>
-      <body className={inter.className}>
-        <Header />
-        {children}
-        <Footer />
+      <body className={`${inter.className}`}>
+        <div className="bg-primary-black overflow-hidden">
+          <Header />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );
